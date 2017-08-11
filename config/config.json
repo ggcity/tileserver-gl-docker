@@ -1,0 +1,28 @@
+{
+  "options": {
+    "paths": {
+      "root": "/",
+      "fonts": "fonts",
+      "styles": "styles",
+      "mbtiles": "data"
+    }
+  },
+  "styles": {
+    "gg-basic": {
+      "style": "gg-basic/style.json",
+      "tilejson": {
+        "bounds": [
+          -119.437,
+          33.298,
+          -116.724,
+          34.583
+        ]
+      }
+    }
+  },
+  "data": {
+    "v3": {
+      "mbtiles": "garden-grove.mbtiles"
+    }
+  }
+}
