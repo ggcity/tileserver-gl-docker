@@ -1,17 +1,17 @@
 {
   "tiles":[
-    "https://ggcity.org/tileserver/data/v3/{z}/{x}/{y}.pbf"
+    "https://ggcity.org/tileserver/data/us/{z}/{x}/{y}.pbf"
   ],
   "name":"OpenMapTiles",
   "format":"pbf",
-  "basename":"garden-grove.mbtiles",
+  "basename":"us",
   "id":"openmaptiles",
   "maskLevel":"8",
   "vector_layers":[
     {
       "id":"water",
       "minzoom":0,
-      "maxzoom":14,
+      "maxzoom":7,
       "fields":{
         "class":"String"
       }
@@ -19,7 +19,7 @@
     {
       "id":"waterway",
       "minzoom":0,
-      "maxzoom":14,
+      "maxzoom":7,
       "fields":{
         "name":"String",
         "class":"String"
@@ -28,7 +28,7 @@
     {
       "id":"landcover",
       "minzoom":0,
-      "maxzoom":14,
+      "maxzoom":7,
       "fields":{
         "class":"String",
         "subclass":"String"
@@ -37,7 +37,7 @@
     {
       "id":"landuse",
       "minzoom":0,
-      "maxzoom":14,
+      "maxzoom":7,
       "fields":{
         "class":"String"
       }
@@ -45,7 +45,7 @@
     {
       "id":"park",
       "minzoom":0,
-      "maxzoom":14,
+      "maxzoom":7,
       "fields":{
         "class":"String"
       }
@@ -53,7 +53,7 @@
     {
       "id":"boundary",
       "minzoom":0,
-      "maxzoom":14,
+      "maxzoom":7,
       "fields":{
         "admin_level":"Number"
       }
@@ -61,7 +61,7 @@
     {
       "id":"aeroway",
       "minzoom":0,
-      "maxzoom":14,
+      "maxzoom":7,
       "fields":{
         "class":"String"
       }
@@ -69,7 +69,7 @@
     {
       "id":"transportation",
       "minzoom":0,
-      "maxzoom":14,
+      "maxzoom":7,
       "fields":{
         "class":"String",
         "oneway":"Number",
@@ -81,7 +81,7 @@
     {
       "id":"building",
       "minzoom":0,
-      "maxzoom":14,
+      "maxzoom":7,
       "fields":{
         "render_height":"Number",
         "render_min_height":"Number"
@@ -90,7 +90,7 @@
     {
       "id":"water_name",
       "minzoom":0,
-      "maxzoom":14,
+      "maxzoom":7,
       "fields":{
         "name":"String",
         "name_en":"String",
@@ -100,7 +100,7 @@
     {
       "id":"transportation_name",
       "minzoom":0,
-      "maxzoom":14,
+      "maxzoom":7,
       "fields":{
         "name":"String",
         "ref":"String",
@@ -111,7 +111,7 @@
     {
       "id":"place",
       "minzoom":0,
-      "maxzoom":14,
+      "maxzoom":7,
       "fields":{
         "name":"String",
         "name_en":"String",
@@ -123,7 +123,7 @@
     {
       "id":"housenumber",
       "minzoom":0,
-      "maxzoom":14,
+      "maxzoom":7,
       "fields":{
         "housenumber":"String"
       }
@@ -131,7 +131,7 @@
     {
       "id":"poi",
       "minzoom":0,
-      "maxzoom":14,
+      "maxzoom":7,
       "fields":{
         "name":"String",
         "name_en":"String",
@@ -144,18 +144,9 @@
   "attribution":"<a href=\"http://openmaptiles.org/\" target=\"_blank\">&copy; OpenMapTiles</a> <a href=\"http://www.openstreetmap.org/about/\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
   "description":"Extract from http://openmaptiles.org",
   "minzoom":0,
-  "maxzoom":14,
-  "center":[
-    -118.0805,
-    33.9405,
-    10
-  ],
-  "bounds":[
-    -119.437,
-    33.298,
-    -116.724,
-    34.583
-  ],
+  "maxzoom":7,
+  "center":[-98.5556,39.8097,3],
+  "bounds":[-180,-90,180,90],
   "version":"3.3",
   "type":"baselayer",
   "tilejson":"2.0.0"

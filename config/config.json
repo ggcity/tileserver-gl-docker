@@ -8,21 +8,25 @@
     }
   },
   "styles": {
-    "gg-basic": {
-      "style": "gg-basic/style.json",
+    "standard": {
+      "style": "standard/style.json",
       "tilejson": {
-        "bounds": [
-          -119.437,
-          33.298,
-          -116.724,
-          34.583
-        ]
+        "bounds": [-122.776,31.609,-112.499,39.316]
+      }
+    },
+    "standard-no-boundary": {
+      "style": "standard/style-no-boundary.json",
+      "tilejson": {
+        "bounds": [-122.776,31.609,-112.499,39.316]
       }
     }
   },
   "data": {
-    "v3": {
-      "mbtiles": "garden-grove.mbtiles"
+    "standard": {
+      "mbtiles": "standard.mbtiles"
+    },
+    "standard-no-boundary": {
+      "mbtiles": "standard.mbtiles"
     }
   }
 }

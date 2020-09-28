@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  ts:
+    build: 
+      context: .
+    image: klokantech/tileserver-gl:v2.6.0
+    env_file: .env
+    restart: unless-stopped
+    ports:
+      - '${TILESERVER_PORT}:80'
+    volumes:
+      - ./config:/config
+      - ./data:/data 
+      - ./styles:/styles
+      - ./fonts:/fonts
+    command: ['--config=/config/config.json', '--public_url=https://ggcity.org/tileserver', '--verbose']

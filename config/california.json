@@ -1,10 +1,10 @@
 {
   "tiles":[
-    "https://ggcity.org/tileserver/data/v3/{z}/{x}/{y}.pbf"
+    "https://ggcity.org/tileserver/data/california/{z}/{x}/{y}.pbf"
   ],
   "name":"OpenMapTiles",
   "format":"pbf",
-  "basename":"garden-grove.mbtiles",
+  "basename":"california-overview.mbtiles",
   "id":"openmaptiles",
   "maskLevel":"8",
   "vector_layers":[

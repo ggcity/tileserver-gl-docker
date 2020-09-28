@@ -10,15 +10,23 @@ Usage
 
 Depending on the source of your glyphs and sources, you'll have to change the style.json accordingly.
 
+    $ sudo docker stop tileserver && sudo docker rm tileserver
+
     $ sudo docker run --name=tileserver --restart=unless-stopped -d \
         -v <data_dir>:/data \
         -v <config_dir>:/config \
         -v <styles_dir>:/styles \
         -v <fonts_dir>:/fonts \
         -p 8081:80 
-        ggcity/tileserver-gl --config=/config/config.json --verbose
+        ggcity/tileserver-gl --config=/config/config.json --verbose --public_url=https://ggcity.org/tileserver
+
+ORRRRR... you can also run all this with the docker compose
+
+    $ sudo docker-compose up --build -d
 
 See more of the usage at klokantech/tileserver-gl.
+
+To change config, you must bring down the container completely via stop/rm then run the above command again.
 
 License
 -------
